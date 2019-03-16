@@ -1,14 +1,17 @@
 language: generic
 
-python:
-  - "3.6"
+addons:
+  apt:
+    packages:
+      - "python3"
+      - "python3-pip"
 
 before_install:
- - pip install --upgrade pip
+ - pip3 install --upgrade pip
 
 install:
-  - pip install -r requirements.txt
-  - pip install pytest
+  - pip3 install -r requirements.txt
+  - pip3 install pytest
 
 script:
   - python3 tweet.py 
