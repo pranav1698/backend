@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns
 import string
-#import nltk
-#from nltk import FreqDist
+import nltk
+from nltk import FreqDist
 import warnings 
 from nltk.stem.porter import  *
 from nltk.corpus import stopwords
