@@ -12,7 +12,7 @@ include:
       sources:
           - ubuntu-toolchain-r-test
         packages:
-          - python-tk 
+          - python-tk
 
 sudo: required
 dist: xenial
