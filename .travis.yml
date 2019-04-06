@@ -12,4 +12,6 @@ before-install:
   - pip install --upgrade pip
 
 install: pip install --user -r requirements.txt
+
+script: make test
   
