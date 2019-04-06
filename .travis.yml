@@ -5,6 +5,15 @@ python:
 virtualenv:
   system_site_packages: true
 
+include:
+  - os: linux
+    addons:
+      update: true
+      sources:
+          - ubuntu-toolchain-r-test
+        packages:
+          - python-tk
+
 sudo: required
 dist: xenial
 
