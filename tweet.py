@@ -18,7 +18,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 
-train = pd.read_csv('$TRAVIS_BUILD_DIR/output.csv')
+train = pd.read_csv('./output.csv')
 #print (train['text'])
 tweets=train['text']
 
