@@ -8,8 +8,9 @@ virtualenv:
 include:
   - os: linux
     addons:
-      update: true
-      sources:
+      apt:
+        update: true
+        sources:
           - ubuntu-toolchain-r-test
         packages:
           - python-tk
