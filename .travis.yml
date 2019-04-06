@@ -5,20 +5,11 @@ python:
 virtualenv:
   system_site_packages: true
 
-include:
-  - os: linux
-    addons:
-      apt:
-        update: true
-        sources:
-          - ubuntu-toolchain-r-test
-        packages:
-          - python-tk
-
 sudo: required
 dist: xenial
 
 before-install:
+  - sudo apt-get install python-tk
   - pip install --upgrade pip
 
 install: pip install --user -r requirements.txt
