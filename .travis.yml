@@ -8,7 +8,7 @@ virtualenv:
 sudo: required
 dist: xenial
 
-before-install:
+before_install:
   - sudo apt-get install python-tk
   - pip install --upgrade pip
 
