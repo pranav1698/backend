@@ -13,5 +13,5 @@ before-install:
 
 install: pip install --user -r requirements.txt
 
-script: make test
+script: python tweet.py
   
